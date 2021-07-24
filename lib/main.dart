@@ -4,7 +4,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_tracker/features/home/home_page.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
   await Firebase.initializeApp();
+
   runApp(MyApp());
 }
 
